@@ -1,0 +1,434 @@
+/* ################################################################*/
+/* BASIC */
+/* ################################################################*/
+
+*{
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+html{
+    background-color: white;
+    color: black;
+    font-family:"Arial","sans-serif";
+    font-size:20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    margin: auto 2%;
+}
+
+
+.sec{
+    margin: 7.5% auto;
+    text-align: center;    
+}
+
+
+
+header{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url(hero.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(hero.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+
+/* ################################################################*/
+/* 1st page */
+/* ################################################################*/
+
+
+.hero{
+    position: absolute;
+    width: 80%;
+    margin: 20% 0 0 5%;
+    
+    }
+h1{
+    color: antiquewhite;
+    font-weight:100;
+    text-transform: uppercase;
+    word-spacing: 20;
+}
+
+/* Buttons */
+
+.btn{
+    display: inline-block;
+    text-decoration:none;
+    font-weight: 200;
+    font-size: 100%;
+    font-family: arial;
+    padding: 5;
+    -webkit-transition: color 2s;
+    transition: color 2s;
+}
+
+.btn:active,
+.btn:hover{
+    background-color:rgba(0, 128, 0, 0.53);
+    border-color: transparent;
+}
+
+/* im hungry */
+
+.btn-full{
+    padding:5;
+    background-color:rgba(210, 105, 30, 1);
+    border-radius:200px;
+    border: 1px solid rgba(210, 105, 30, 1);
+    color:white;
+}
+
+/* show me more */
+.btn-ghost{
+    border-radius: 200px;
+    background-color: transparent;
+    border:1px solid rgba(127, 255, 0, 0.65);
+    padding:5;
+    color: white;
+}
+
+/* navigation */
+
+.logo
+{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: 5 auto; 
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+
+}
+
+.main-nav li{
+    display: inline-block;
+    margin: 20 20 0 20;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: none;
+    font-size: 90%;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.sticky .main-nav li a:active,
+.main-nav li a:hover{
+    border-bottom: 5px solid rgba(255, 165, 0, 0.6);
+}
+.sticky{
+    position: fixed;
+    width: 100%;
+    height:45;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    -webkit-box-shadow: 0px 2px 2px blue;
+    box-shadow: 0px 2px 2px rgba(128, 128, 128, 0.49);
+}
+
+.sticky .main-nav li a:link,
+.main-nav li a:visited{
+    color: black;
+    text-transform: none;
+    font-size: 90%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* ################################################################*/
+/* 2nd page */
+/* ################################################################*/
+
+/*getfoodfast*/
+
+h2{
+    width: 100%;
+    font-size:40;
+    font-weight: 50;
+    font-family:sans-serif;
+    color: rgb(33, 26, 113);
+    text-transform:uppercase;
+    text-align: center;
+    margin: 2% auto;
+    word-spacing: 9px;
+    font: Montserrat;
+}
+
+h2:after{
+    display: block;
+    height: 4px;
+    background-color:orange;
+    content:"";
+    width: 85%;
+    margin: 0 auto;
+}
+    
+.long1{
+    font-size:20px;
+    color: rgba(33, 26, 113, 0.60);
+    margin:0 15%;
+    margin-bottom: 50;
+    text-align: center;
+}
+h3{
+    padding:5 0;
+    color: rgb(33, 26, 113);
+    font-weight: 200;
+    border:2px solid rgba(0, 0, 0, 0.17);
+    border-radius:50px;
+    -webkit-transition:2s;
+    transition:2s;
+    margin-top: 20;
+}
+h3:hover,h3:active
+    {
+    background-color: rgba(108, 229, 20, 0.52);
+    }
+
+.long{
+    color:rgba(33, 26, 113, 0.74);
+    margin-top: 15;
+    font-family: cursive;
+    font-weight: 100;
+    text-align: left;
+    word-spacing:5;
+}
+
+.icons{
+    font-size: 200%;
+    color: rgba(255, 165, 0, 0.67);
+}
+
+.gallery{
+    width: 100%;
+    list-style: none;
+    overflow:hidden;
+    background-color:transparent;
+    margin: 5% auto
+    
+}
+.image{
+    width: 25%;
+    height:auto;
+    float:left;
+    display: block;
+    -webkit-transform:scaleY(1.10);
+    transform:scaleY(1.10);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;  
+    -webkit-filter: brightness(0.8);  
+    filter: brightness(0.8);
+}
+
+.image:hover,
+.image:active{
+-webkit-transform: scaleY(1.03);
+transform: scaleY(1.03);
+-webkit-filter: brightness(1.1);
+filter: brightness(1.1);
+}
+
+
+/* ################################################################*/
+/*  4th page */
+/* ################################################################*/
+
+.working{
+    width: 100%;
+    background-color:rgba(0, 255, 255, 0.17);
+    height:102%;
+    overflow:hidden;
+}
+
+.iphone{
+    width: 40%;
+    margin-left: 30%;
+    -webkit-transform:scale(1.10);
+    transform:scale(1.10);
+    display: block;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+ }
+.iphone:hover,
+.iphone:active{
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+.steps
+{
+    margin:10% auto;
+}
+
+.steps div{
+    color: rgba(0, 128, 0);
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 5px;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    float: left;
+    font-size: 150%;
+}
+.work{
+    margin: 10%;
+}
+
+.android{
+    margin: 30%;
+}
+
+
+
+/* ################################################################*/
+/*  5th page */
+/* ################################################################*/
+
+.city{
+    width: 100%;
+    margin: 7% auto;
+    text-align: center;
+    color: blue;
+}
+.city-images{
+    width: 75%;
+    height: auto;
+}
+
+.contents
+{
+    color:rgb(95, 158, 160);
+    font-weight: 100;
+    margin-left:30%;
+    text-align: left; 
+}
+
+h4{
+    margin:7% auto;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: black;
+}
+.icon{
+    color:rgba(0, 0, 255, 0.65);
+}
+
+/* ################################################################*/
+/*  5th page */
+/* ################################################################*/
+
+
+.review{
+    width: 100%;
+    height: 100%;
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.80)),to(rgba(0,0,0,0.80))),url(back-customers.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.80),rgba(0,0,0,0.80)),url(back-customers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    
+}
+
+.pict{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+} 
+
+h6{
+    color: white;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20 auto;
+}
+h6:after{
+    display: block;
+    height: 2px;
+    background-color: orange;
+    width:75%;
+    content: "";
+    margin: 10 auto;
+
+}
+.cite{
+    color: rgba(255, 255, 255, 0.72);
+    font-weight: 100;
+    width: 75%;
+    line-height: 1.5;
+    word-spacing: 1.5;
+}
+.cont{
+    margin: 8% 5%;;
+}
+
+/* ################################################################*/
+/* 6th page */
+/* ################################################################*/
+
+.contract {
+    width: 60%;
+    margin: 0  auto 5% auto;
+}
+
+
+input[type=email],input[type=text],selec,textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px solid grey;
+}
+
+input[type=submit]{
+    background-color: orange;
+    border-radius: 50px;
+    padding: 10 ;
+    color:white;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: rgba(255, 165, 0, 0.75);
+    border-radius: 50px;
+    padding: 10 ;
+    color:white;
+}
+
+textarea{
+    height: 150;
+    
+}
+
+input[checkbox]{
+    margin:10 auto
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
